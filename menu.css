@@ -1,0 +1,16 @@
+.menu{
+list-style:none;
+float:right;
+}
+
+.menu a{
+    position:relative;
+    float:left;
+    border-right:1px solid;
+    padding:5px 10px
+    }
+
+.menu a:hover{
+    background:#333;
+    color:#fff;
+}
