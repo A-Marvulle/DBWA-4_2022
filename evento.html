@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="menu.css" />
+  <title>EVENTOS - IFSP</title>
+</head>
+
+<body>
+  <header>
+    <object width=100% height=60px data="menu.html"> </object>
+
+    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/77770610c0de515c6150e899d70445ff3d25094d/Logo.jpg">
+  </header>
+  
+  <main>
+    <h1>Inscreva-se</h1>
+    <form id="evento">
+      <fieldset>
+      Evento:
+      <select name="evento">
+        <option value="default">-- Selecione --</option>
+        <option value="voe">Voe Sem Asas</option>
+        <option value="festaJunina">Festa Junina</option>
+        <option value="semanaTec">Semana da Tecnologia</option>      
+      </select>
+      </fieldset>
+    </form>
+    
+    <form id="acesso">
+      <fieldset>
+        <legend>INFORMAÇÕES DE ACESSO</legend>
+        <label><br>Usuário: </label>
+        <input type="text" name="user" id="user"><br>
+        <label><br>Senha: </label>
+        <input type="password" name="senha" id="senha"><br>
+        <label><br>Confirmação de Senha: </label>
+        <input type="password" name="confSenha" id="confSenha"><br>
+      </fieldset>      
+    </form>
+
+    <form id="infoPessoal">
+      <fieldset>
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+        <label><br>Nome Completo: </label>
+        <input type="text" name="nome" id="nome"><br>
+        <label><br>E-mail: </label>
+        <input type="mail" name="email" id="mail"><br>
+        <label><br>Celular: </label>
+        <input type="text" name="celular" id="cel"> (99) 99999-99999 <br>
+        <fieldset>
+          <legend>Sexo</legend>
+          <input type="radio" value="f" name="sexo"/>Feminino
+          <input type="radio" value="m" name="sexo"/>Masculino
+        </fieldset>
+
+        <label><br>Nascimento: </label>
+        <input type="date" name="data" id="dtNasc"><br>
+
+        <label><br>Cor Favorita: </label>
+        <input type="color" name="cor" id="corFav"><br>
+
+        <label><br>GitHub: </label>
+        <input type="text" name="git" id="perfGit"><br>
+
+      </fieldset>
+
+      <input type="button" value="Inscrever" id="inscreverBtn">
+      <input type="reset" value="Limpar" id="envioBtn">
+    </form>
+    
+  </main>
+
+  <footer>
+    <object width=100% height=150px data="rodape.html"> </object>
+  </footer>
+
+
+</body>
+
+</html>
