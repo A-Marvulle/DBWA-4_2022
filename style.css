@@ -1,0 +1,101 @@
+.img-palestra {
+  border-radius: 45%;
+}
+
+figcaption {
+  width: 100%;
+  border-style: dotted;
+}
+
+#evento select {
+  width:100%;
+  text-align: center;
+}
+
+#inscreverBtn {
+  width: 100%;
+  color:white;
+  background-color: #4caf50;
+  padding: 15px;
+  margin-top: 25px;
+  border: none;
+}
+
+#evento {
+  margin-bottom: 10px;
+}
+
+#acesso {
+  margin-bottom: 10px;
+}
+
+#cel {
+  margin-bottom: 10px;
+}
+
+#limpaBtn {
+  width: 100%;
+  color:white;
+  background-color: #4caf50;
+  padding: 15px;
+  margin-top: 25px;
+  border: none;
+}
+
+#nome {
+  width: 100%;
+}
+
+#mail {
+  width: 100%;
+}
+
+#cel {
+  width: 100%;
+} 
+
+#txt {
+  margin-top: 25px;
+  width: 100%;
+}
+
+#envioBtn {
+  width: 100%;
+  color:white;
+  background-color: #4caf50;
+  padding: 15px;
+  margin-top: 25px;
+  border: none;
+}
+
+ #username {
+  display: block;
+  background-color: #f2f2f2; 
+  border-radius: 5px;
+  padding: 20px;
+} 
+
+#codigo {
+  display: block;
+  background-color: #f2f2f2; 
+  border-radius: 5px;
+  padding: 0 0 0 20px ;
+  margin-top: 25px;
+} 
+
+ #entrar {
+  display: block;
+  background-color: #f2f2f2; 
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 25px;
+} 
+
+#loginBtn {
+  width: 100%;
+  color:white;
+  background-color: #4caf50;
+  padding: 15px;
+  border: none;
+  margin-bottom: 10px;
+}

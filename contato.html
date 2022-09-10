@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
-	<meta charset="UTF-8" />
-	<link rel = "shortcut icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico"/>
-  <link rel="stylesheet" type="text/css"  href="menu.css" />
-	<title>CONTATO - IFSP</title>
+  	<meta charset="UTF-8" />
+  	<link rel = "shortcut icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico"/>
+    <link rel="stylesheet" type="text/css"  href="menu.css" />
+    <link rel="stylesheet" type="text/css"  href="style.css" />
+  	<title>CONTATO - IFSP</title>
   </head>
+  
   <body>
+  
+    <body>
     <header>
-      <object width = 100% height = 60px data="menu.html"> </object>
-       <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/77770610c0de515c6150e899d70445ff3d25094d/Logo.jpg">
-    </header>
+		  <nav class="dp-menu">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="evento.html">EVENTOS</a></li>
+      <li><a href="contato.html">CONTATO</a></li>
+      <li><a href="#">CURSOS</a>
+        <ul>
+          <li><a href="ads.html">Análise e Desenvolvimento de Sistemas</a></li>
+          <li><a href="ep.html">Engenharia de Produção</a></li>
+          <li><a href="gti.html">Gestão em Tecnologia da Informação</a></li>
+          <li><a href="letras.html">Letras</a></li>
+          <li><a href="gstp.html">Gestão Pública</a></li>
+        </ul>
+      </li>
+      <li><a href="login.html">ENTRAR</a></li>
+      <li><a href="sobre.html" id="sobre">SOBRE</a></li>
+    </ul>
+  </nav>
+			<div class="img-header">
+				<img src = "https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/77770610c0de515c6150e899d70445ff3d25094d/Logo.jpg">
+			</div>
+	</header>
     
     <main>
+      <h1>MANDE UMA MENSAGEM</h1>
       <form id="infoCtt">
-      <fieldset>
-        <legend>MANDE UMA MENSAGEM</legend>
-        <label><br>Nome Completo: </label>
-        <input type="text" name="nome" id="nome"><br>
-        <label><br>E-mail: </label>
-        <input type="email" name="email" id="mail"><br>
-        <label><br>Celular: </label>
-        <input type="text" name="celular" id="cel"> (99) 99999-99999 <br>
-        <br><fieldset>
-          <legend>Assunto</legend>
-          <select name="assunto">
-            <option value="default">-- Selecione --</option>
-            <option value="rec">Reclamação</option>
-            <option value="sugst">Sugestão</option> 
-          </select>
-          <br><label><textarea>Digite sua mensagem...</textarea></label>
+        <fieldset>
+          <label><br>Nome Completo </label><br>
+          <input type="text" name="nome" id="nome"><br>
+          <label><br>E-mail</label><br>
+          <input type="email" name="email" id="mail"><br>
+          <label><br>Celular</label><br>
+          <input type="text" name="celular" id="cel" placeholder= "(99) 99999-99999"> <br>
+          <br>
+            <fieldset>
+              <legend>Assunto</legend>
+              <select name="assunto">
+                <option value="default">-- Selecione --</option>
+                <option value="rec">Reclamação</option>
+                <option value="sugst">Sugestão</option> 
+              </select>
+              <br><label><textarea placeholder= "Digite sua mensagem..." id="txt"></textarea></label>
+            </fieldset>
         </fieldset>
 
         <br>
 
         <fieldset>
           <legend>Opções de Resposta</legend>
-        <input type="checkbox" name="re" id="tel"> Telefone<br>
-        <input type="checkbox" name="re" id="email"> E-Mail<br>
-      </fieldset>      
-      <input type="button" value="Enviar" id="envioBtn">
-    </form>
+          <input type="checkbox" name="re" id="tel"> Telefone<br>
+          <input type="checkbox" name="re" id="email"> E-Mail<br>
+        </fieldset>      
+        <input type="submit" value="Enviar" id="envioBtn">
+      </form>
     </main>
 
     <footer>
