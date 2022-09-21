@@ -1,12 +1,11 @@
-.img-palestra {
-  border-radius: 45%;
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
 }
 
-figcaption {
-  width: 100%;
-  border-style: dotted;
+.grid-item {
+  text-align: center;
 }
-
 #evento select {
   width:100%;
   text-align: center;
