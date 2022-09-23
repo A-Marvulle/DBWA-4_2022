@@ -2,3 +2,33 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+a:link {
+  color: black;
+  transition: 0.3s background;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+ color: #050561;
+}
+
+input {
+  width: 100px;
+  padding: 2px;
+  margin: 5px;
+  border: none;
+  border-radius: 5%;
+  transition: 0.3s background;
+
+}
+
+input:hover {
+  background-color: #08b508;
+  border: none;
+  transform: scale(1.2);
+
+}

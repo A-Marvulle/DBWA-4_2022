@@ -36,17 +36,22 @@ var a04 = new Aluno("Marcelo","Caju",5,6.9);
 var a05 = new Aluno("Tamires","Rosa",10,0);
 
 
-const matriz = [[a01.getCompleto,a01.getMedia,a01.getSitaucao],
-                [a02.getCompleto,a02.getMedia,a02.getSitaucao],
-                [a03.getCompleto,a03.getMedia,a03.getSitaucao],
-                [a04.getCompleto,a04.getMedia,a04.getSitaucao],
-                [a05.getCompleto,a05.getMedia,a05.getSitaucao]]
+const matriz = [["Nome: " + a01.getCompleto + " | Média: " + a01.getMedia + " | Situação: " + a01.getSitaucao],
+                ["Nome: " + a02.getCompleto + " | Média: " + a02.getMedia + " | Situação: " + a02.getSitaucao],
+                ["Nome: " + a03.getCompleto + " | Média: " + a03.getMedia + " | Situação: " + a03.getSitaucao],
+                ["Nome: " + a04.getCompleto + " | Média: " + a04.getMedia + " | Situação: " + a04.getSitaucao],
+                ["Nome: " + a05.getCompleto + " | Média: " + a05.getMedia + " | Situação: " + a05.getSitaucao]]
 
-for(var i = 0; i<1; i++) {
+function notas () {
+   for(var i = 0; i<1; i++) {
     for(var j = 0; j<5; j++) {
       alert(matriz[i,j]);
     }
+  }
 }
+
+
+
   
 
 
