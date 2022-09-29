@@ -7,25 +7,25 @@ class Aluno {
     }
 
     get getCompleto(){
-        return this.nomeCompleto()
+      return this.nomeCompleto()
     }
     nomeCompleto() {
-        return this.nome + " " + this.sobrenome;
+      return this.nome + " " + this.sobrenome;
     }
 
     get getMedia(){
-        return this.media();
+      return this.media();
     }
     media(){
-        return (this.n1*0.6) + (this.n2*0.4)
+      return (this.n1*0.6) + (this.n2*0.4)
     }
 
     get getSitaucao() {
-        return this.situacao();
+      return this.situacao();
     }
 
     situacao(){
-        return this.getMedia > 6 ? " Aprovado " : " Reprovado ";
+      return this.getMedia >= 6 ? "Aprovado" : "Reprovado";
     }
     
 }
@@ -43,10 +43,8 @@ const matriz = [["Nome: " + a01.getCompleto + " | Média: " + a01.getMedia + " |
                 ["Nome: " + a05.getCompleto + " | Média: " + a05.getMedia + " | Situação: " + a05.getSitaucao]]
 
 function notas () {
-   for(var i = 0; i<1; i++) {
-    for(var j = 0; j<5; j++) {
-      alert(matriz[i,j]);
-    }
+  for (var i=0; i < matriz.length; i++){
+    document.getElementById("teste").innerHTML = document.getElementById("teste").innerHTML  +  "<p>" + matriz[i][0];
   }
 }
 
