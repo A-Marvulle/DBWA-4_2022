@@ -4,37 +4,56 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="menu.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css"  href="style.css" />
-  <title>LOGIN- IFSP</title>
+  <link rel="stylesheet" type="text/css"  href="menu.css" />
+
+
+  
+  <title>LOGIN - IFSP</title>
 </head>
 
+
 <body>
-<body>
-    <header>
-		 <object width = 100% height = 300px data="menu.html"> </object>
+    <header style="margin: 8px 8px 7px 8px">
+		 <div id="menu"></div>
 	  </header>
 
   <main>
-    <h1>ENTRAR</h1>
-    
-    <form id="login">
-      <div id="username">
-        <label id="campoUser">Usuário: </label>
-        <input type="text" name="user" id="user"><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card my-5">
+          <form class="card-body cardbody-color p-lg-5">
+            <div class="text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/ifsp.png" class="img-fluid profile-image-pic" width="150px" alt="profile" style="padding-bottom: 50px">
+                  <h2 class="h3 mb-3 font-weight-normal" style="padding-bottom: 10px">ENTRAR</h2>
+                </div>  
+              </div>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="password" placeholder="Senha">
+            </div>
+            <div class="text-center">
+              <label><input type="checkbox" value="remember-me"> Lembrar de mim</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-color px-5 mb-5 w-100" id="loginBtn">Login</button>
+            </div>
+          </form>
+        </div>
       </div>
-      
-     <div id="codigo">
-      <label><br>Senha: </label>
-      <input type="password" name="senha" id="senha"><br><br>
-     </div>
-
-      <div id="entrar">
-        <input type="button" value="Entrar" id="loginBtn">
-        <a href="https://youtu.be/x5EngsI7HYo">Esqueci a Senha</a>
-      </div>
-      
-    </form>
+    </div>
+  </div>
   </main>
 
   <footer>
@@ -43,5 +62,12 @@
 
 
 </body>
+  <script>
+    $(document).ready(function() {
+      $.get( "menu.html", function( data ) {
+        $( "#menu" ).html( data );
+      });
+    });
+  </script>
 
 </html>

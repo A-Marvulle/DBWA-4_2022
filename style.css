@@ -97,16 +97,8 @@
   margin-top: 25px;
 } 
 
- #entrar {
-  display: block;
-  background-color: #f2f2f2; 
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 25px;
-} 
-
 #loginBtn {
-  width: 100%;
+  width: 50px;
   color:white;
   background-color: #4caf50;
   padding: 15px;

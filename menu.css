@@ -1,53 +1,57 @@
-
-.dp-menu ul {
-  background-color: #35363a;
-  color: white;
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: -5px;
-}
-
-.dp-menu ul li {
-    display: inline;
-    position: relative;
-}
-
-.dp-menu ul li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    transition: background .3s;
-  color: white;
-}
-
-.dp-menu ul li a:hover {
-    background-color: red;
-  transform: scale(1.1);
-}
-
-/*sub menu*/
-.dp-menu ul ul {
-    display: none;
-    left: 0;
-    position: absolute;
-}
-
-.dp-menu ul li:hover ul {
-    display: block;
-}
-
-.dp-menu ul ul {
-    width: 300px;
-}
-
-.dp-menu ul ul li a {
-    display: block;
-}
-#sobre {
- float:right; 
-}
-.img-header {
-  background-color: #00872b;
+.div_img_menu{
+  background: #00822a;
   width: 100%;
 }
-
+#menu .img_menu{
+  position: relative;
+  margin-left: 0;
+  height: 119px;
+  width: 357px;
+  background: #00822a;
+}
+#menu ul{
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#menu li{
+  display: inline-block;
+}
+#menu li:hover{
+  background: rgb(225, 0, 0);
+}
+#menu li a{
+  color:#fff;
+  display:inline-block;
+  padding:14px 16px;
+  text-align:center;
+  text-decoration:none;   
+  
+}
+#menu .drop{
+  display: inline-block;
+}
+#menu .drop-conteudo{
+  background-color:#333;
+  box-shadow:0 8px 16px 0 rgba(0,0,0,.2);
+  display:none;
+  min-width:160px;
+  position:absolute;
+  z-index: 1;
+}
+#menu .drop-conteudo a {
+  color:#ffffff;
+  display:block;
+  padding:12px 16px;
+  text-align:left;
+  text-decoration:none;
+}
+#menu .drop-conteudo a:hover{
+  background: rgb(255, 0, 0);
+}
+#menu .drop:hover .drop-conteudo{
+  display: block; 
+  
+}
