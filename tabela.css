@@ -1,0 +1,89 @@
+#title{
+  text-align:center;
+}
+
+#componentes {
+  border:none;
+  text-align:center;
+}
+
+#componentes td,#componentes th{
+  border:none;
+  padding:8px;
+}
+
+#componentes tr {
+  background-color:#e6e6e6;
+}
+
+#componentes tr:hover {
+  background-color:#333333;
+  color: #fff;
+}
+
+#componentes th {
+  background-color:#00822a;
+  color:#fff;
+  padding-bottom:12px;
+  padding-top:12px;
+  text-align:center;
+}
+
+.slideshow-table {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 337px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #00872b;
+  color: white;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #00872b;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #35363a;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+

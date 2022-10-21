@@ -4,7 +4,7 @@
   <head>
 		<meta charset="UTF-8" />
 		<link rel = "shortcut icon" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico"/>
-    <link rel="stylesheet" type="text/css"  href="style.css" />
+    <link rel="stylesheet" type="text/css"  href="tabela.css" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="ads.js" type="text/babel"></script>
@@ -33,7 +33,43 @@
           atualização diante da realidade tecnológica, de modo que o profissional seja um mediador competente 
           entre o desenvolvimento tecnológico e a sociedade em que se insere.
       </p>
-      <div id="grade"> </div>
+      <div class="slideshow-table">
+        <div class="myTable">
+          <div id="1sem"></div>
+        </div>
+        <div class="myTable">
+          <div id="2sem" ></div>
+        </div>
+        <div class="myTable">
+          <div id="3sem" ></div>
+        </div>
+        <div class="myTable">
+          <div id="4sem" ></div>
+        </div>
+        <div class="myTable">
+          <div id="5sem" ></div>
+        </div>
+        <div class="myTable">
+          <div id="6sem" ></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&larr; </a>
+        <a class="next" onclick="plusSlides(1)">&rarr; </a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+      </div>
+
+      
+      
+      
     </main>
     
     <footer>

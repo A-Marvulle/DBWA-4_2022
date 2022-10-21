@@ -7,36 +7,6 @@
   text-align: center;
 }
 
-#title{
-  text-align:center
-}
-
-#componentes {
-  border:none;
-  text-align:center;
-}
-
-#componentes td,#componentes th{
-  border:none;
-  padding:8px
-}
-
-#componentes tr {
-  background-color:#f2f2f2
-}
-
-#componentes tr:hover {
-  background-color:#ddd
-}
-
-#componentes th {
-  background-color:#00822a;
-  color:#fff;
-  padding-bottom:12px;
-  padding-top:12px;
-  text-align:center
-}
-
 #evento select {
   width:100%;
   text-align: center;
