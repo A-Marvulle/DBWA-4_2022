@@ -1,0 +1,50 @@
+#imgCima {
+  width: 100%;
+  background-color: #00852c
+}
+
+#title{
+  text-align:left;
+}
+
+#componentes {
+  border:none;
+  text-align:center;
+}
+
+#componentes td,#componentes th{
+  border:none;
+  padding:8px;
+  width: 150px;
+}
+
+#componentes tr {
+  background-color:#e6e6e6;
+}
+
+#componentes tr:hover {
+  background-color:#333333;
+  color: #fff;
+}
+
+#componentes th {
+  background-color:#00822a;
+  color:#fff;
+  padding-bottom:12px;
+  padding-top:12px;
+  text-align:center;
+}
+
+.btn {
+  width: 100%;
+  color:white;
+  background-color: #4caf50;
+  padding: 8px;
+  border: none;
+  transition: background .3s;
+
+}
+
+.btn:hover {
+  background-color: #234d24;
+}
